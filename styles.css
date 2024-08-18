@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073e6;
+    padding: 20px 0;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.banner .btn {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Categories Styles */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.category-card {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.category-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Featured Content Styles */
+.featured-content {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.featured-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-card {
+    width: 30%;
+    margin: 0 10px;
+    float: left;
+    text-align: center;
+}
+
+.content-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.content-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
