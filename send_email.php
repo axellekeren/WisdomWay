@@ -1,24 +1,15 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Ambil data dari formulir
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-    
-    $to = 'axellekeren829@gmail.com';
-    $subject = 'Message from ' . $name;
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = 'From: ' . $email . "\r\n" .
-               'Reply-To: ' . $email . "\r\n" .
-               'X-Mailer: PHP/' . phpversion();
-    
-    // Kirim email
-    if (mail($to, $subject, $body, $headers)) {
-        echo 'Email sent successfully.';
-    } else {
-        echo 'Failed to send email.';
-    }
+$to = 'axellekeren829@gmail.com';
+$subject = 'Automated Email Subject';
+$message = 'This is an automated email sent by your PHP script.';
+$headers = 'From: no-reply@yourdomain.com' . "\r\n" .
+           'Reply-To: no-reply@yourdomain.com' . "\r\n" .
+           'X-Mailer: PHP/' . phpversion();
+
+// Kirim email
+if (mail($to, $subject, $message, $headers)) {
+    echo 'Automated email sent successfully.';
 } else {
-    echo 'Invalid request.';
+    echo 'Failed to send automated email.';
 }
 ?>
