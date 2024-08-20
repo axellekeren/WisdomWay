@@ -3,32 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Embed Example</title>
-    <style>
-        /* Add some basic styling */
-        .video-container {
-            text-align: center;
-            margin: 20px;
-        }
-        iframe {
-            width: 100%;
-            height: 315px; /* Adjust height as needed */
-            border: none;
-        }
-    </style>
+    <meta name="description" content="Website edukasi dengan berbagai topik pembelajaran.">
+    <title>Website Edukasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Other content above -->
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <a href="/" class="logo">EduWeb</a>
+                <ul class="nav-menu">
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#courses">Kursus</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Video Embed Section -->
-    <div class="video-container">
-        <h2>Watch Our Latest Video!</h2>
-        <iframe src="https://yt3.googleusercontent.com/dP0xg5OrvWhG9Ph_7TyWoU3zBSHk9eGw1UfF8_JvDLx8NeWtgYFmEfaAEpDIMNqP8WJHegfaUQ=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
-    </div>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <h1>Selamat Datang di EduWeb</h1>
+                <p>Temukan berbagai kursus dan materi edukasi untuk meningkatkan pengetahuan Anda.</p>
+                <a href="#courses" class="btn-primary">Lihat Kursus</a>
+            </div>
+        </section>
 
-    <!-- Other content below -->
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Kami menyediakan berbagai kursus edukatif untuk membantu Anda mempelajari hal-hal baru.</p>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <div class="container">
+                <h2>Kursus Kami</h2>
+                <div class="course-list">
+                    <article class="course-item">
+                        <h3>Kursus 1</h3>
+                        <p>Deskripsi singkat tentang kursus 1.</p>
+                        <a href="#" class="btn-secondary">Pelajari Lebih Lanjut</a>
+                    </article>
+                    <article class="course-item">
+                        <h3>Kursus 2</h3>
+                        <p>Deskripsi singkat tentang kursus 2.</p>
+                        <a href="#" class="btn-secondary">Pelajari Lebih Lanjut</a>
+                    </article>
+                    <!-- Tambahkan lebih banyak kursus di sini -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EduWeb. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
